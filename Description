@@ -1,0 +1,13 @@
+Transfer Learning-Based Classification of Poultry Diseases for Enhanced Health Management
+Category: Artificial Intelligence | Skills: Python, Deep Learning
+
+This project develops a transfer learning-based system to classify poultry diseases into four categories: Salmonella, New Castle Disease, Coccidiosis, and Healthy. Integrated into a mobile app, it allows farmers to input data (symptoms, environmental conditions, biological samples) and get instant diagnoses with treatment suggestions. The goal is to empower farmers to manage poultry health effectively, reduce disease impact, and boost productivity.
+
+Scenario 1: Rural Outbreak Response
+In a rural community reliant on poultry farming, farmers observe sick birds with symptoms like lethargy and diarrhea. Using the app, they diagnose Coccidiosis and take prompt action, preventing disease spread and economic loss.
+
+Scenario 2: Commercial Farm Monitoring
+A large poultry farm uses the system for daily health checks. Early detection of New Castle Disease enables quick quarantine and control measures, averting a major outbreak and safeguarding productivity.
+
+Scenario 3: Veterinary Training Tool
+A veterinary school integrates the app into training, letting students diagnose diseases and explore treatment options. This hands-on experience prepares them to use advanced diagnostic tools in real-world practice.
