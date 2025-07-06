@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Training - PoultryDetect</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+  
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-700 shadow-md">
+    <div class="text-2xl font-bold text-green-400">PoultryDetect</div>
+    <div class="space-x-6 text-sm uppercase tracking-widest">
+      <a href="{{ url_for('home') }}" class="hover:text-green-400 transition">Home</a>
+      <a href="{{ url_for('about') }}" class="hover:text-green-400 transition">About</a>
+      <a href="{{ url_for('contact') }}" class="hover:text-green-400 transition">Contact</a>
+      <a href="{{ url_for('training') }}" class="hover:text-green-400 transition text-green-400">Training</a>
+    </div>
+  </nav>
+  
+  <!-- Main Content -->
+  <main class="flex-grow container mx-auto px-4 py-12">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl font-bold mb-8 text-center">Training & Education</h1>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-gray-900 p-8 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-4 text-green-400">Disease Information</h2>
+          <p class="text-gray-300 mb-4">Learn about common poultry diseases and their characteristics.</p>
+          <a href="#diseases" class="bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-lg text-sm font-semibold">
+            View Disease Guide
+          </a>
+        </div>
+        
+        <div class="bg-gray-900 p-8 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-4 text-green-400">Prevention Tips</h2>
+          <p class="text-gray-300 mb-4">Best practices for maintaining healthy poultry and preventing diseases.</p>
+          <a href="#prevention" class="bg-green-500 hover:bg-green-600 transition px-4 py-2 rounded-lg text-sm font-semibold">
+            View Prevention Guide
+          </a>
+        </div>
+      </div>
+      
+      <!-- Disease Information Section -->
+      <div id="diseases" class="bg-gray-900 p-8 rounded-lg mb-8">
+        <h2 class="text-2xl font-semibold mb-6 text-green-400">Common Poultry Diseases</h2>
+        
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">Coccidiosis</h3>
+            <p class="text-gray-300 mb-2"><strong>Symptoms:</strong> Bloody diarrhea, lethargy, loss of appetite, dehydration</p>
+            <p class="text-gray-300 mb-2"><strong>Cause:</strong> Parasitic infection by coccidia protozoa</p>
+            <p class="text-gray-300"><strong>Treatment:</strong> Anticoccidial medications, supportive care</p>
+          </div>
+          
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">Newcastle Disease</h3>
+            <p class="text-gray-300 mb-2"><strong>Symptoms:</strong> Respiratory distress, nervous signs, decreased egg production</p>
+            <p class="text-gray-300 mb-2"><strong>Cause:</strong> Viral infection (Newcastle disease virus)</p>
+            <p class="text-gray-300"><strong>Treatment:</strong> Supportive care, vaccination programs</p>
+          </div>
+          
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold text-green-400 mb-3">Salmonella</h3>
+            <p class="text-gray-300 mb-2"><strong>Symptoms:</strong> Diarrhea, fever, weakness, sudden death in young birds</p>
+            <p class="text-gray-300 mb-2"><strong>Cause:</strong> Bacterial infection (Salmonella species)</p>
+            <p class="text-gray-300"><strong>Treatment:</strong> Antibiotics, improved hygiene, biosecurity measures</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Prevention Section -->
+      <div id="prevention" class="bg-gray-900 p-8 rounded-lg">
+        <h2 class="text-2xl font-semibold mb-6 text-green-400">Prevention Best Practices</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Biosecurity Measures</h3>
+            <ul class="text-gray-300 space-y-2">
+              <li>• Limit visitor access to poultry areas</li>
+              <li>• Disinfect equipment and footwear</li>
+              <li>• Quarantine new birds before introduction</li>
+              <li>• Control rodent and wild bird access</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Hygiene Practices</h3>
+            <ul class="text-gray-300 space-y-2">
+              <li>• Clean water and feed systems regularly</li>
+              <li>• Remove dead birds promptly</li>
+              <li>• Maintain proper ventilation</li>
+              <li>• Clean and disinfect housing regularly</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Vaccination Programs</h3>
+            <ul class="text-gray-300 space-y-2">
+              <li>• Follow recommended vaccination schedules</li>
+              <li>• Use appropriate vaccines for your region</li>
+              <li>• Maintain cold chain for vaccines</li>
+              <li>• Monitor antibody levels</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="text-lg font-semibold text-green-400 mb-3">Nutrition & Environment</h3>
+            <ul class="text-gray-300 space-y-2">
+              <li>• Provide balanced nutrition</li>
+              <li>• Ensure adequate space per bird</li>
+              <li>• Maintain optimal temperature</li>
+              <li>• Monitor stress factors</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="text-center text-gray-600 py-6 text-sm border-t border-gray-800 mt-12">
+    © 2025 PoultryDetect. All rights reserved.
+  </footer>
+
+</body>
+</html>
