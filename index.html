@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PoultryDetect - AI-Powered Disease Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+  
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-700 shadow-md">
+    <div class="text-2xl font-bold text-green-400">PoultryDetect</div>
+    <div class="space-x-6 text-sm uppercase tracking-widest">
+      <a href="{{ url_for('home') }}" class="hover:text-green-400 transition text-green-400">Home</a>
+      <a href="{{ url_for('about') }}" class="hover:text-green-400 transition">About</a>
+      <a href="{{ url_for('contact') }}" class="hover:text-green-400 transition">Contact</a>
+      <a href="{{ url_for('training') }}" class="hover:text-green-400 transition">Training</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <main class="flex-grow flex flex-col items-center justify-center px-4 text-center mt-12">
+    <h1 class="text-4xl sm:text-5xl font-bold mb-4 text-white">Poultry Disease Identifier</h1>
+    <p class="text-gray-400 text-lg mb-8 max-w-2xl">AI-powered disease detection system for poultry health monitoring. Upload an image to detect diseases like Coccidiosis, Newcastle Disease, and Salmonella.</p>
+    
+    <!-- Quick Actions -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+      <a href="{{ url_for('predict') }}" class="bg-green-500 hover:bg-green-600 transition px-8 py-3 rounded-lg text-lg font-semibold">
+        Start Detection
+      </a>
+      <a href="{{ url_for('about') }}" class="bg-gray-700 hover:bg-gray-600 transition px-8 py-3 rounded-lg text-lg font-semibold">
+        Learn More
+      </a>
+    </div>
+    
+    <!-- Features Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mt-8">
+      <div class="bg-gray-900 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold text-green-400 mb-3">Fast Detection</h3>
+        <p class="text-gray-300">Get instant results with our AI-powered analysis system</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold text-green-400 mb-3">High Accuracy</h3>
+        <p class="text-gray-300">Advanced machine learning for reliable disease identification</p>
+      </div>
+      <div class="bg-gray-900 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold text-green-400 mb-3">Educational</h3>
+        <p class="text-gray-300">Learn about poultry diseases and prevention methods</p>
+      </div>
+    </div>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="text-center text-gray-600 py-6 text-sm border-t border-gray-800 mt-12">
+    © 2025 PoultryDetect. All rights reserved.
+  </footer>
+
+</body>
+</html>
